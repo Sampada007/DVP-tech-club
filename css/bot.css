@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+/* **
+-- BotUI styling
+** */
+
+.botui-container,
+.botui-messages-container {
+	background: black;
+}
+
+.human.botui-message-content.text {
+	background: #16215c;
+	color: white;
+}
+
+.botui-message-content {
+	font-size: 18px;
+	font-size: 1rem;
+	font-family: 'Montserrat';
+	background: rgb(48, 41, 58);
+	color: white;
+}
+
+.botui-messages-container {
+	max-height: 40vh;
+	overflow-y: auto;
+}
+
+.botui-actions-buttons-button {
+	background-color: rgb(95, 175, 226);
+	font-size: 21.599px;
+	font-size: 1.2rem;
+	font-family: 'Montserrat';
+	font-weight: bold;
+	-webkit-transition: 300ms ease-in-out;
+	transition: 300ms ease-in-out
+}
+
+.botui-actions-buttons-button:focus {
+	color: rgb(95, 175, 226);
+	background-color: white;
+}
+
+.botui-actions-buttons-button:not(:focus) {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.botui-actions-text-input {
+	color: #CDACE0;
+	font-size: 21.599px;
+	font-size: 1.2rem;
+	border-bottom: solid 2px currentColor;
+	font-family: 'Montserrat';
+	font-weight: bold;
+	-webkit-transition: 300ms ease-in-out;
+	transition: 300ms ease-in-out
+}
+
+.botui-actions-text-input:not(:focus) {
+	font-style: italic;
+	color: white;
+}
+
+.botui-action-text-icon {
+	color: white;
+}
+
+
+/* **
+-- Global styling
+** */
+
+header {
+	text-align: center;
+}
+
+.logo-wrapper {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	margin: -30px 50px 0;
+	font-style: italic;
+}
+
+.bot-wrapper {
+	margin: 0 46%;
+	position: fixed;
+}
+
+.modal-wrapper.open {
+	opacity: 1;
+	visibility: visible;
+}
+
+.modal {
+	width: 600px;
+	height: 400px;
+	display: block;
+	margin: 50% 0 0 -300px;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	opacity: 0;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.modal-wrapper.open .modal {
+	opacity: 1;
+}
+
+.head {
+	width: 80%;
+	height: 32px;
+	overflow: hidden;
+}
+
+.btn-close {
+	width: 32px;
+	height: 32px;
+	display: block;
+	float: right;
+	margin-left: 65vw;
+	margin-top: 12vh;
+}
+
+.btn-close::before,
+.btn-close::after {
+	content: '';
+	width: 32px;
+	height: 6px;
+	display: block;
+	background: white;
+}
+
+.btn-close::before {
+	margin-top: 12px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.btn-close::after {
+	margin-top: -6px;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+@media (max-width:621px) {
+	.modal {
+		width: 600px;
+		height: 400px;
+		display: block;
+		margin: 50% 0 0 -25vw;
+		position: relative;
+		top: 50%;
+		left: 50%;
+		opacity: 0;
+		-webkit-transition: all 0.5s ease-in-out;
+		-moz-transition: all 0.5s ease-in-out;
+		-o-transition: all 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;
+	}
+}
